@@ -1,13 +1,477 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+// @import "modules/hello.scss"; how to import modules
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #172121; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #172121; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @media (max-width: 768px) {
+        min-height: 64px;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__link {
+        text-decoration: none;
+        color: #f1ffe7;
+        font-size: 18px;
+        margin: 16px 64px;
+        font-family: "Roboto Mono", monospace;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        display: none;
+        &--open {
+            display: flex;
+        }
+    }
+}
+
+.main-homepage {
+    background: #f1ffe7;
+    margin: 128px auto;
+    max-width: 624px;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: "Roboto Mono", monospace;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #172121; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    &__description {
+        font-size: 8px;
+        margin: 8px 16px;
+        color: #f1ffe7;
+    }
+    @media (max-width: 768px) {
+        &__description {
+            font-size: 6px;
+        }
+    }
+}
+
+.strong {
+    font-weight: normal;
+    color: #ff4000;
+}
+
+.site-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 128px 0 192px 0;
+    &__homepage {
+        color: #161925;
+        margin-left: 16px;
+    }
+    &__computer-science {
+        font-size: 48px;
+        font-family: "Roboto Mono", monospace;
+        color: #f1ffe7;
+        font-weight: normal;
+    }
+    &__tennis {
+        font-size: 48px;
+        font-family: "Roboto Mono", monospace;
+        color: #f1ffe7;
+        font-weight: normal;
+    }
+}
+
+.who {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__photo {
+        float: left;
+        border-radius: 64px;
+        width: 168px;
+        height: 232px;
+        margin-right: 32px;
+    }
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        color: #000000;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        margin: 0;
+    }
+    &__subtitle {
+        color: #5a5a66;
+        font-family: "Iceberg", cursive;
+        font-size: 18px;
+        margin: 0;
+    }
+    &__paragraph {
+        min-width: 360px;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-right: 32px;
+    }
+    &__link {
+        color: #134611;
+        font-family: "Roboto Mono", monospace;
+        text-decoration: none;
+    }
+}
+
+.main-computer {
+    max-width: 800px;
+    margin: 128px auto;
+}
+
+.studies {
+    background-color: #f1ffe7;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__photo {
+        border-radius: 16px;
+        width: 300px;
+        height: 432px;
+        margin: 32px;
+    }
+    &__title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        color: #000;
+        margin: 32px 0 36px 0;
+        font-weight: normal;
+    }
+    &__paragraph {
+        max-width: 340px;
+        min-width: 300px;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.frontend {
+    background-color: #f1ffe7;
+    border-radius: 16px;
+    margin-top: 192px;
+    padding: 32px;
+    &__title {
+        margin: 0;
+        margin-bottom: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+    }
+    &__paragraph {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 680px;
+        min-width: 520px;
+    }
+}
+
+/* styles in computer-science subpage end */
+
+/* styles in tennis subpage start */
+
+.main-tennis {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.tennis-genesis {
+    background-color: #f1ffe7;
+    border-radius: 16px;
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--start {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    &__title {
+        margin: 32px 0 36px 0;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+    }
+    &__description {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 440px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+    &__header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: normal;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-right: 6px;
+            margin-bottom: 2px;
+        }
+    }
+    &__article {
+        margin: 64px 32px 0;
+        padding-bottom: 36px;
+    }
+    &__paragraph {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 92px;
+        line-height: 20px;
+        max-width: 650px;
+    }
+}
+
+.tennis-photo {
+    width: 330x;
+    height: 360px;
+    border-radius: 16px;
+    margin: 32px;
+}
+
+.tennis {
+    &__image {
+        margin-left: 32px;
+        &--camp {
+            width: 300px;
+            height: 220px;
+        }
+        &--prince {
+            width: 350px;
+            height: 210px;
+        }
+        &--ball {
+            width: 250px;
+            height: 280px;
+        }
+    }
+}
+
+/* styles in tennis subpage end*/
+
+/* anime subpage */
+
+.main-anime {
+    margin: 128px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why {
+    background: #f1ffe7;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__image {
+        width: 250px;
+        height: 290px;
+        border-radius: 16px;
+        margin: 32px;
+    }
+    &__title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+    }
+    &__paragraph {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        max-width: 400px;
+        margin-right: 64px;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 32px;
+
+        &__image {
+            order: 2;
+        }
+
+        &__div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            padding: 16px;
+        }
+
+        &__paragraph {
+            margin: 0;
+            max-width: 350px;
+            padding: 16px;
+        }
+    }
+}
+
+.favourite {
+    margin-top: 192px;
+    background: #f1ffe7;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    &__title {
+        font-weight: normal;
+        font-size: 32px;
+    }
+    &__anime-header {
+        font-weight: normal;
+        font-size: 24px;
+    }
+    &__describe {
+        font-size: 16px;
+        max-width: 300px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 96px;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 32px;
+    }
+
+    @media (max-width: 768px) {
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 3px solid #fff;
+        background: transparent;
+        margin: 16px 16px 0 0;
+        transition: 0.3s transform linear;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 3px solid #fff;
+            transform: translateY(11px);
+        }
+
+        &::after {
+            transform: translateY(25px);
+            transition: 0.3s transform linear;
+        }
+
+        &--close {
+            transform: rotate(45deg) translateY(5px);
+            border: none;
+            &::after {
+                transform: rotate(-90deg) translateX(-10px);
+            }
+        }
+    }
 }
