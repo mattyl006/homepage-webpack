@@ -2,7 +2,7 @@
 
 # Homepage z wykorzystaniem webpack'a 
 
-Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.
+Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.  
 Środowisko zostało wygenerowane za pomocą webpack startera pana [Maćka Korsana](https://github.com/maciejkorsan/wtf-webpack-starter).
 
 ## Sposób użycia
