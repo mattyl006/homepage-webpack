@@ -7,7 +7,7 @@ Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.
 
 ## Sposób użycia
 
-Po sklonowaniu repozytorium za pomocą `git clone *link*`, należy w katalogu roboczym wywołać `npm install`.
+Po sklonowaniu repozytorium za pomocą `git clone`, należy w katalogu roboczym wywołać `npm install`.
 
 ## Dostępne skrypty
 
