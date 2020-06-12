@@ -1,18 +1,18 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# Homepage z wykorzystaniem webpack'a 
 
-Simple toolkit for your static websites development.
+Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.
 
-## How to use it?
+## Sposób użycia
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Po sklonowaniu repozytorium za pomocą `git clone *link*`, należy w katalogu roboczym wywołać `npm install`.
 
-## Available scripts
+## Dostępne skrypty
 
-`npm run start` - runs development mode
+`npm run start` - uruchomienie środowiska, pozwalającego wygodnie pracować (automatyczne odświeżanie po zmianie).
 
-`npm run build` - runs build process for production
+`npm run build` - proces budowy projektu dla produkcji.
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+`npm run publish` - publikacja projektu za pomocą github pages na gałęzi `gh-pages`.
 
