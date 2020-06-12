@@ -1,5 +1,3 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
-
 # Homepage z wykorzystaniem webpack'a 
 
 Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.  
