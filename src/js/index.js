@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import moment from 'moment';
 
 function greet(name, age) {
     console.log(`Siema, mam na imię ${name}, mam ${age} lat`);
@@ -113,3 +114,5 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger--close');
     navigation.classList.toggle('navigation--open');
 })
+
+console.log(`Dzień się zaczął: ${moment().startOf('day').fromNow()}`);
