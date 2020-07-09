@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__link {
+        text-decoration: none;
+        color: #f1ffe7;
+        font-size: 18px;
+        margin: 16px 64px;
+        font-family: "Roboto Mono", monospace;
+        transition: color .3s linear;
+        transition: transform .3s linear;
+        &:hover {
+            color: #ff4000;
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        display: none;
+        &--open {
+            display: flex;
+        }
+    }
+}

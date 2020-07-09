@@ -1,0 +1,32 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: "Roboto Mono", monospace;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #172121; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #172121,
+        #203a43,
+        #172121
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    &__description {
+        font-size: 8px;
+        margin: 8px 16px;
+        color: #f1ffe7;
+    }
+    @media (max-width: 768px) {
+        &__description {
+            font-size: 6px;
+        }
+    }
+}

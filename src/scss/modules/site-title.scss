@@ -1,0 +1,28 @@
+.site-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 192px 0;
+    &__homepage {
+        color: #161925;
+        margin-left: 16px;
+    }
+    &__computer-science {
+        font-size: 48px;
+        font-family: "Roboto Mono", monospace;
+        color: #f1ffe7;
+        font-weight: normal;
+    }
+    &__tennis {
+        font-size: 48px;
+        font-family: "Roboto Mono", monospace;
+        color: #f1ffe7;
+        font-weight: normal;
+    }
+    &__anime {
+        font-size: 48px;
+        font-family: "Roboto Mono", monospace;
+        color: #f1ffe7;
+        font-weight: normal;
+    }
+}

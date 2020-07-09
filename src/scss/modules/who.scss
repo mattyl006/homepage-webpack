@@ -1,0 +1,56 @@
+@keyframes photo-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.who {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__photo {
+        float: left;
+        border-radius: 64px;
+        width: 168px;
+        height: 232px;
+        margin-right: 32px;
+        animation: photo-animation 6s ease-in-out infinite;
+    }
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        color: #000000;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        margin: 0;
+    }
+    &__subtitle {
+        color: #5a5a66;
+        font-family: "Iceberg", cursive;
+        font-size: 18px;
+        margin: 0;
+    }
+    &__paragraph {
+        min-width: 360px;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-right: 32px;
+    }
+    &__link {
+        color: #134611;
+        font-family: "Roboto Mono", monospace;
+        text-decoration: none;
+    }
+}
