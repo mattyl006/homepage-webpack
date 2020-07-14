@@ -44,7 +44,12 @@ body {
     #203a43,
     #172121
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: block;
+  }
 }
+
+
 
 .site-header {
   position: fixed;
@@ -75,6 +80,9 @@ body {
   max-width: 624px;
   border-radius: 16px;
   padding: 32px;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    margin-top: 256px;
+  }
 }
 
 .strong {
