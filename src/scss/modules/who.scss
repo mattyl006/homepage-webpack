@@ -1,15 +1,3 @@
-@keyframes photo-animation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 .who {
     display: flex;
     justify-content: center;
@@ -21,7 +9,7 @@
         width: 168px;
         height: 232px;
         margin-right: 32px;
-        animation: photo-animation 6s ease-in-out infinite;
+        flex-shrink: 0;
     }
 
     &__header {
