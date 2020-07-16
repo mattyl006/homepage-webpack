@@ -2,7 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background: #f1ffe7;
+    max-width: 624px;
+    border-radius: 16px;
+    padding: 32px;
+  
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      margin-top: 256px;
+    }
+  
     &__photo {
         float: left;
         border-radius: 64px;
@@ -11,11 +19,11 @@
         margin-right: 32px;
         flex-shrink: 0;
     }
-
+  
     &__header {
         margin-bottom: 24px;
     }
-
+  
     &__title {
         color: #000000;
         font-weight: normal;
@@ -23,12 +31,14 @@
         font-size: 36px;
         margin: 0;
     }
+  
     &__subtitle {
         color: #5a5a66;
         font-family: "Iceberg", cursive;
         font-size: 18px;
         margin: 0;
     }
+  
     &__paragraph {
         min-width: 360px;
         line-height: 20px;
@@ -36,9 +46,10 @@
         font-size: 16px;
         margin-right: 32px;
     }
+  
     &__link {
         color: #134611;
         font-family: "Roboto Mono", monospace;
         text-decoration: none;
     }
-}
+  }

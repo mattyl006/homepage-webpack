@@ -12,7 +12,7 @@
         background: transparent;
         margin: 16px 16px 0 0;
         transition: 0.3s transform linear;
-
+  
         &::before,
         &::after {
             content: "";
@@ -23,12 +23,12 @@
             border-top: 3px solid #fff;
             transform: translateY(11px);
         }
-
+  
         &::after {
             transform: translateY(25px);
             transition: 0.3s transform linear;
         }
-
+  
         &--close {
             transform: rotate(45deg) translateY(5px);
             border: none;
@@ -37,4 +37,4 @@
             }
         }
     }
-}
+  }

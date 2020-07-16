@@ -1,17 +1,11 @@
 @import "~normalize.css";
-
-@import "_variables";
-// @import "modules/hello.scss"; how to import modules
-@import "modules/hamburger.scss";
-@import "modules/why.scss";
-@import "modules/who.scss";
-@import "modules/tennis-genesis.scss";
-@import "modules/studies.scss";
-@import "modules/site-title.scss";
-@import "modules/navigation.scss";
-@import "modules/frontend.scss";
+@import "modules/repositories.scss";
 @import "modules/footer.scss";
-@import "modules/favourite.scss";
+@import "modules/hamburger.scss";
+@import "modules/site-title.scss";
+@import "modules/who.scss";
+@import "modules/site-header.scss";
+@import "modules/navigation.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
@@ -31,112 +25,21 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #172121; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #172121,
-    #203a43,
-    #172121
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #172121,
-    #203a43,
-    #172121
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #172121;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     display: block;
   }
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #172121; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #172121,
-    #203a43,
-    #172121
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #172121,
-    #203a43,
-    #172121
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  @media (max-width: 768px) {
-    min-height: 64px;
-  }
-}
-
-.main-homepage {
-  background: #f1ffe7;
-  margin: 128px auto;
-  max-width: 624px;
-  border-radius: 16px;
-  padding: 32px;
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    margin-top: 256px;
-  }
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .strong {
   font-weight: normal;
   color: #ff4000;
-}
-
-.main-computer {
-  max-width: 800px;
-  margin: 128px auto;
-}
-
-/* styles in computer-science subpage end */
-
-/* styles in tennis subpage start */
-
-.main-tennis {
-  max-width: 1200px;
-  margin: 100px auto;
-}
-
-.tennis-photo {
-  width: 330x;
-  height: 360px;
-  border-radius: 16px;
-  margin: 32px;
-}
-
-.tennis {
-  &__image {
-    margin-left: 32px;
-    &--camp {
-      width: 300px;
-      height: 220px;
-    }
-    &--prince {
-      width: 350px;
-      height: 210px;
-    }
-    &--ball {
-      width: 250px;
-      height: 280px;
-    }
-  }
-}
-
-/* styles in tennis subpage end*/
-
-/* anime subpage */
-
-.main-anime {
-  margin: 128px auto;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

@@ -1,0 +1,10 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #172121;
+    @media (max-width: 768px) {
+      min-height: 64px;
+    }
+  }
