@@ -21,7 +21,8 @@
     }
 
     &__div {
-        background-color: #ff4000;
+        background-color: #58A4B0;
+        
         border-radius: 0 0 50% 0;
     }
 
@@ -30,11 +31,25 @@
         margin-bottom: 16px;
     }
 
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: normal;
+        transition: color .3s linear;
+        transition: transform .3s linear;
+        &:hover {
+            color: #134611;
+            transform: scaleX(1.06);
+        }
+    }
+
     &__describe {
         background-color: #f1ffe7;
         font-style: italic;
         margin: 0;
         padding-bottom: 8px;
+        max-width: 260px;
     }
     
     &__commits {
