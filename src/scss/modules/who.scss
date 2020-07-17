@@ -51,5 +51,11 @@
         color: #134611;
         font-family: "Roboto Mono", monospace;
         text-decoration: none;
+        transition: font-weight .3s linear;
+        transition: transform .3s linear;
+        &:hover {
+            font-weight: bold;
+            transform: scaleX(1.05);
+        }
     }
   }
