@@ -16,7 +16,7 @@ fetch('https://api.github.com/users/Wirus006/repos?sort=created')
                     <p class="repositories__describe">
                         ${description}
                     </p>
-                    <p class="repositories__commits">forks: ${forks_count}</p>
+                    <p class="repositories__forks">forks: ${forks_count}</p>
                 </div>
             </article>
             </li>
