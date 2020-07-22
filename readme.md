@@ -1,6 +1,6 @@
 # Homepage z wykorzystaniem webpack'a 
 
-Kontynuacja projektu *Homepage*, w którym korzystam już z webpacka.  
+Projekt reprezentujący moje początki z frontend'em. Starałem się przećwiczyć w nim najpopularniejsze techniki html'a, css'a i js'a.  
 Środowisko zostało wygenerowane za pomocą webpack startera pana [Maćka Korsana](https://github.com/maciejkorsan/wtf-webpack-starter).
 
 ## Sposób użycia
